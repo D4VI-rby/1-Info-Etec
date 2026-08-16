@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(55, 55, 55);
+}
+
+ul, ol{
+    padding-left: 0;
+    list-style: none;
+}
+
+header{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu{
+    width: 100%;
+    background-color: rgb(55, 55, 55);
+}
+
+#menu ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    padding: 10px 10px;
+}
+
+#menu ul li a{
+    color: azure;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+#destaque{
+    position: relative;
+    padding-top: 40px;
+    background: url(../images/como_jogar_hollow_knight-e1604507508666-700x394.webp);
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#destaque h1{
+    color: #fff;
+    font-size: 100px;
+    z-index: 1000;
+}
+
+.gradiente{
+    position: relative;
+    width: 100%;
+    height: 510px;
+}
+
+.sec-colunas {
+    display: flex;
+    padding: 20px 5%;
+    background-color: rgb(37, 37, 37);
+    justify-content: space-between;
+}
+
+.coluna1de2 {
+    max-width: 600px;
+    color: #ddd;
+    text-align: center;
+}
+
+.coluna1de2 h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+}
+
+.coluna1de2 p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+img{
+    width: 600px;
+}
+
+.sec-colunas2 {
+    display: flex;
+    padding: 10px 5%;
+    background-color: rgb(48, 48, 48);
+    justify-content: space-between;
+}
+
+.coluna3de4 {
+    max-width: 600px;
+    color: #ddd;
+    text-align: center;
+}
+
+.coluna3de4 h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+}
+
+.coluna3de4 p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.coluna3de4 img{
+    width: 650px;
+    margin-top: 13%;
+    border: 5px;
+    border: #ddd;
+}
