@@ -1,0 +1,18 @@
+<script>
+    var ano1=parseInt(prompt("escreva o ano de nascimento"))
+    var ano2=parseInt(prompt("escreva o ano atual"))
+    var idade=ano2-ano1
+    document.write("A idade = "+idade);
+
+    if (idade < 16) {
+        document.write("dente de leite" );
+    } else if (idade < 18) {
+        document.write("sub juvenil");
+    } else if (idade >= 16) {
+        document.write("juvenil");
+    } else if (idade <= 20) {
+        document.write("aspirante");
+    } else {
+        document.write("profissional");
+    }
+</script>

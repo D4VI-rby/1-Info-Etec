@@ -1,0 +1,52 @@
+(let) É utilizado para variáveis ??cujo valor irá mudar.
+(const) É utilizado para variáveis ??cujo valor permanecerá constante.
+
+let userName = "Leeroy Jenkins";
+userName = "Leeroy05";
+
+console.log(userName);  // Output: Leeroy05
+
+## Número
+Um número pode ser qualquer número inteiro ou decimal. 
+Ele pode ser usado para representar números inteiros, 
+frações ou medidas precisas.
+
+let year = 2023;
+let age = 28;
+let mealCost = 12.99;
+const pi = 3.14;
+const daysOfWeek = 7;
+
+## string
+Uma string é usada para armazenar texto ou uma sequência de caracteres. 
+As strings são delimitadas por aspas duplas " "ou aspas simples ' '.
+
+let message = "good nite";
+let user = '@zuck';
+const company = "Codédex";
+
+## Booleano
+Um tipo de dado booleano, ou bool`true`, armazena um valor que só pode ser verdadeiro ou falso. 
+Em JavaScript, 
+é escrito em minúsculas trueou ` true` false.
+
+let hungry = true;
+let lateToMeeting = false;
+const earthIsFlat = false;
+
+## Indefinido
+
+Qualquer variável que seja declarada, 
+mas ainda não tenha recebido um valor, 
+é considerada nula undefined. 
+Isso pode ocorrer quando uma variável é declarada sem que lhe seja atribuído um valor, 
+ou quando lhe é atribuído explicitamente o valor `null` undefined.
+
+let startDate = "01/23/2022";
+let endDate;
+
+console.log(startDate);  // 01/23/2022
+console.log(endDate);    // undefined
+
+Esse tipo de dado é útil se você criar uma variável, 
+mas ainda não tiver decidido qual valor ela deverá ter.

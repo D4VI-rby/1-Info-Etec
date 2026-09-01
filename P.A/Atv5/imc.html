@@ -1,0 +1,22 @@
+<script>
+    var peso= Number(prompt("Digite seu peso(kg):"));
+    var altura = Number(prompt("Digite sua altura (m):"));
+
+    var imc = peso/ ( altura **2 );
+
+    document.write("IMC: " + imc.toFixed(2)); 
+
+    if (imc < 18.5) {
+        document.write("Excesso de Magreza");
+    } else if (imc < 25) {
+        document.write("Peso Normal");
+    } else if (imc < 30) {
+        document.write("Excesso de Peso");
+    } else if (imc < 35) {
+        document.write("Obesidade (Grau I)");
+    } else if (imc < 40) {
+        document.write("Obesidade (Grau II)");
+    } else {
+        document.write("Obesidade (Grau III)");
+    }
+</script>

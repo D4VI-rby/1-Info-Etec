@@ -1,0 +1,30 @@
+<script>
+    var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+    var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+
+    var media = (nota1 + nota2) / 2;
+
+    document.write("Média: " + media + "<br>");
+
+    if (media < 3) {
+        document.write("Aluno REPROVADO");
+    }
+    else if (media >= 6) {
+        document.write("Aluno APROVADO");
+    }
+    else {
+        document.write("Aluno em EXAME<br>");
+
+        var exame = parseFloat(prompt("Digite a nota do exame:"));
+
+        var novaMedia = (media + exame) / 2;
+
+        document.write("Nova média: " + novaMedia + "<br>");
+
+        if (novaMedia >= 6) {
+            document.write("Aluno APROVADO");
+        } else {
+            document.write("Aluno REPROVADO");
+        }
+    }
+</script>

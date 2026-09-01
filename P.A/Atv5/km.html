@@ -1,0 +1,14 @@
+<script>
+    var dis = parseFloat(prompt("Digite a distância percorrida km :"));
+    var capTanq = parseFloat(prompt("Digite a capacidade do tanque litros :"));
+
+    var consumo = dis / capTanq;
+
+    document.write("Consumo médio: " + consumo.toFixed(2) + " km/L");
+
+    if (consumo >= 10) {
+        document.write("Econômico");
+    } else {
+        document.write("Não econômico");
+    }
+</script>
