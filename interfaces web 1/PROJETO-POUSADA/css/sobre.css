@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+  }
+
+/* ==================================================
+   NAVBAR / MENU
+================================================== */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-left: 8px;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 1rem 2rem;
+    position: relative;
+    background-attachment: fixed;
+  }
+  
+  
+  /* ---------- LOGO ---------- */
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: rgb(153, 209, 255);
+  }
+  
+  
+  /* ---------- MENU ---------- */
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: 0.3s ease;
+  }
+  
+  .menu-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .menu-list a {
+    color: rgb(153, 209, 255);
+    font-weight: 700;
+    font-size: 2cap;
+  
+  }
+  
+ 
