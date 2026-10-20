@@ -1,0 +1,181 @@
+/* Mobile First */
+
+body{
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;   
+}
+
+ul, ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu{
+    display: none;   
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+#menu ul{    
+    display: flex;    
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 10px 0px;
+}
+
+#menu ul li a{
+    color:#333336;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#destaque{ 
+    position: relative;   
+    padding-top: 40px; /* espaçamento para alinhar com o menu*/
+    background: url('../imagens/img-destaque.webp');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#destaque h1{
+    color: #fff;    
+    font-size: 3em;
+    z-index: 1000;
+}
+
+.gradiente{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .3);
+}
+
+.sec-colunas{
+    margin: 0 auto;
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.coluna1de1{
+    width: 100%;
+    max-width: 100%;   
+}
+
+.coluna1de2{
+    width: 100%;    
+    background: rgb(0, 179, 255);
+}
+
+
+/********************************************/
+@media (min-width: 768px) {
+
+    body{
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;   
+}
+
+ul, ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu{   
+    display: block;   
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+#menu ul{    
+    display: flex;    
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 10px 0px;
+}
+
+#menu ul li a{
+    color:#333336;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#destaque{ 
+    position: relative;   
+    padding-top: 40px; /* espaçamento para alinhar com o menu*/
+    background: url('../imagens/img-destaque.webp');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#destaque h1{
+    color: #fff;    
+    font-size: 4em;
+    z-index: 1000;
+}
+
+.gradiente{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .3);
+}
+
+.sec-colunas{
+    margin: 0 auto;
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.coluna1de1{
+    width: 100%;
+    max-width: 100%;   
+}
+
+.coluna1de2{
+    width: 49%;    
+    background: rgb(0, 179, 255);
+}
+            
+}

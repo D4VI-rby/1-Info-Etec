@@ -1,0 +1,161 @@
+body{
+    background: #282828;
+    margin:15px;
+    height: 100vh;
+}
+
+li{
+    display: flex;
+    display: inline;
+    padding: 30px;
+}
+
+p{
+    color:rgb(255, 255, 255);
+}
+
+.corDestaque{
+    color:#eb36e2;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: rgb(96, 25, 189);
+}
+
+nav {
+    flex: 1;
+    padding: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0px;
+    padding: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000000;
+    font-size: 24px
+}
+
+a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color:  rgb(255, 255, 255);
+}
+
+h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.migrar{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    border-bottom: 2px solid rgb(96, 25, 189);;
+    padding: 0px;
+}
+
+.section2{
+    width: 50%;
+}
+
+.conteudo-linux{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    gap: 50px;
+}
+
+.imgLinux{
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.section3{
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.imgDistro{
+    width: 800px;
+    height: 500px;
+}
+
+.section4{
+    width: 800px;
+    margin: 30px auto 0 auto;
+    background-color: rgb(96, 25, 189);
+    padding: 10px;
+}
+
+.section4 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section5{
+    width: 50%;
+    float: center;
+    margin-left: 25%;
+    margin-right: 0%;
+    margin-top: 4%;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10%;
+    gap: 5px;
+    min-height: 55vh;
+}
+
+input, textarea{
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    padding: 8px;
+    border: 2px solid rgb(96, 25, 189);
+}
+
+button{
+    width: 250px;
+    padding: 10px;
+    background: rgb(96, 25, 189);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+ 
+footer{
+    background-color: rgb(96, 25, 189);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
