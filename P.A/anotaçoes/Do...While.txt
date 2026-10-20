@@ -1,0 +1,32 @@
+Do...While
+ALGORITMO
+
+1. 
+	1- inicie o contador (i<-1)
+	2- faça do passo 3 ao 6
+		3- calcule o numero (n<-n+i)
+		4- apresente o numero (n)
+		5- incremente (i++)
+	6- enquanto (i<400)
+
+2. 
+	1- inicie o contador (i<-0)
+	2- faça do passo 
+		3- se (i/2 == 0) faça
+			4- apresente o  numero (i)
+		5- incremente (i++)
+	6- enquanto (i<500)
+
+3. 
+	1- inicie o contador (i<-1)
+	2- faça do passo 3 ao 11
+		3- leia o ano atual (aa)
+		4- leia o ano de nascimento (an)
+		5- calcule a idade (id<-aa-an)
+		6- apresente a idade (id)
+		7- se (id>=18) então
+			8- escreva ("maior")
+		9- senão
+			10- escreva ("menor")
+		11- incremente (i++)
+	12- 

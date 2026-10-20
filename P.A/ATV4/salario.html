@@ -1,0 +1,13 @@
+<script>
+    var salarioBruto = parseFloat(prompt("Digite o salário bruto:"));
+
+    var inss = salarioBruto * 0.08;
+    var valeTransporte = salarioBruto * 0.06;
+
+    var salarioLiquido = salarioBruto - inss - vt;
+
+    document.write("Salário Bruto: R$ " + salarioBruto + "<br>");
+    document.write("INSS: R$ " + inss + "<br>");
+    document.write("vt: R$ " + vt + "<br>");
+    document.write("Salário Líquido: R$ " + salarioLiquido);
+</script>

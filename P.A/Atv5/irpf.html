@@ -1,0 +1,27 @@
+<script>
+    var salario = parseFloat(prompt("Digite o salário:"));
+    var irpf = 0;
+
+    if (salario <= 1434.59) {
+        irpf = 0;
+    }
+    else if (salario <= 2150.00) {
+        irpf = (salario * 7.5 / 100) - 107.59;
+    }
+    else if (salario <= 2866.70) {
+        irpf = (salario * 15 / 100) - 268.84;
+    }
+    else if (salario <= 3582.00) {
+        irpf = (salario * 22.5 / 100) - 483.84;
+    }
+    else {
+        irpf = (salario * 27.5 / 100) - 662.94;
+    }
+
+    if (irpf < 0) {
+        irpf = 0;
+    }
+
+    document.write("Salário: R$ " + salario.toFixed(2) + "<br>");
+    document.write("IRPF: R$ " + irpf.toFixed(2));
+</script>

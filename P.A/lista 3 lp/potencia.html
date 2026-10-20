@@ -1,0 +1,11 @@
+<script>
+    var base = parseInt(prompt("digite o numero:"));
+    var exp = parseInt(prompt("digite o expoente:"));
+    var resultado = 1;
+    var i = 1;
+    while (i <= exp) {
+        resultado = resultado * base;
+        i++;
+    }
+    document.write(+base," elevado a ", +exp, "=", +resultado );
+</script>
