@@ -1,0 +1,27 @@
+<script>
+    var maisVelho = 0;
+    var maisNovo = 0;
+    var anoAtual = parseInt(prompt("Digite o ano atual:"));
+
+    for(i=1;i<5;i++) {
+        var anoNascimento = parseInt(prompt("Digite seu ano de nascimento:"));
+        var idade = anoAtual - anoNascimento;
+
+        document.write("A idade eh: " + idade + " anos. <br>");
+
+        if (i == 1) {
+            maisVelho = idade;
+            maisNovo = idade;
+        } else {
+            if(idade > maisVelho){
+                maisVelho = idade;
+            }
+            if(idade < maisNovo){
+                maisNovo = idade;
+            }
+        }
+    }
+    document.write("<br>Idade do mais velho: " +maisVelho);
+    document.write("<br>Idade do mais novo : " +maisNovo);
+
+</script>
