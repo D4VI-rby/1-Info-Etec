@@ -1,0 +1,187 @@
+/* ==================================================
+   inicio.css — estilos só da página inicial (index.html)
+================================================== */
+
+/* ==================================================
+   FUNDO (HERO)
+================================================== */
+
+.fund {
+  background-image: url("../images/fundo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Camada escura sobre a imagem */
+.fund::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+/* Texto fica acima da camada escura */
+.fund h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  color: var(--azul-claro);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ==================================================
+   TITULO
+================================================== */
+
+.section-titulo {
+  background-color: snow;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px 12px 0 0;
+  color: rgb(0, 18, 38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-titulo h2 {
+  font-size: 2.5rem;
+}
+
+/* ==================================================
+   CARROSSEL
+================================================== */
+
+.sectionrol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(250, 254, 255);
+  position: relative;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.carousel {
+  width: 600px;
+  height: 375px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel input {
+  display: none;
+}
+
+/* ---------- SLIDES ---------- */
+
+.slides {
+  display: flex;
+  width: 700%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 14.2857%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 5px solid var(--azul-claro);
+  border-radius: 14px;
+}
+
+/* ---------- TROCA DAS IMAGENS ---------- */
+
+#slide1:checked ~ .slides { transform: translateX(0); }
+#slide2:checked ~ .slides { transform: translateX(-14.2857%); }
+#slide3:checked ~ .slides { transform: translateX(-28.5714%); }
+#slide4:checked ~ .slides { transform: translateX(-42.8571%); }
+#slide5:checked ~ .slides { transform: translateX(-57.1428%); }
+#slide6:checked ~ .slides { transform: translateX(-71.4285%); }
+#slide7:checked ~ .slides { transform: translateX(-85.7142%); }
+
+/* ---------- BOLINHAS ---------- */
+
+.botoes {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.botoes label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #aaa;
+  cursor: pointer;
+}
+
+/* ---------- BOLINHA ATIVA ---------- */
+
+#slide1:checked ~ .botoes label:nth-child(1),
+#slide2:checked ~ .botoes label:nth-child(2),
+#slide3:checked ~ .botoes label:nth-child(3),
+#slide4:checked ~ .botoes label:nth-child(4),
+#slide5:checked ~ .botoes label:nth-child(5),
+#slide6:checked ~ .botoes label:nth-child(6),
+#slide7:checked ~ .botoes label:nth-child(7) {
+  background: #333;
+}
+
+/* ==================================================
+   IMAGENS PEQUENAS DOS LADOS
+================================================== */
+
+.imagens-laterais {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imagens-laterais p {
+  display: flex;
+  justify-content: center;
+}
+
+.imagens-laterais img {
+  width: 300px;
+  height: 147px;
+  object-fit: cover;
+  border: 4px solid var(--azul-claro);
+  border-radius: 14px;
+}
+
+/* ==================================================
+   TABLET E CELULAR
+================================================== */
+
+/* Abaixo de 1100px as imagens laterais não cabem ao lado do carrossel */
+@media (max-width: 1100px) {
+  .imagens-laterais {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    height: 300px;
+  }
+}

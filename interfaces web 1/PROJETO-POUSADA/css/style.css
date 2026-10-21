@@ -1,0 +1,288 @@
+:root {
+  --azul-claro: rgb(153, 209, 255);
+  --azul-escuro: #000850;
+  --texto: #001226;
+  --fundo: #f4f8fc;
+}
+
+* {
+  padding: 0;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  color: var(--texto);
+  background: var(--fundo);
+  min-height: 100vh;
+}
+
+/* ==================================================
+   NAVBAR / MENU
+================================================== */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--azul-escuro);
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+/* ---------- LOGO ---------- */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.logo-nome {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--azul-claro);
+}
+
+/* ---------- MENU ---------- */
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none; /* só aparece no celular */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu-list a {
+  color: var(--azul-claro);
+  font-weight: 700;
+  font-size: 2cap;
+}
+
+/* ==================================================
+   CONTEÚDO DAS PÁGINAS INTERNAS (sobre, serviços, contato, reservas)
+================================================== */
+
+.conteudo {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 120px 24px 40px;
+}
+
+.conteudo h1 {
+  margin-bottom: 4px;
+  color: var(--azul-escuro);
+}
+
+.conteudo p {
+  margin-bottom: 24px;
+}
+
+/* ==================================================
+   RODAPÉ
+================================================== */
+
+footer {
+  background-color: var(--azul-escuro);
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* ---------- PRIMEIRA PARTE ---------- */
+
+footer .linha-footer {
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.linha-footer h2 {
+  font-size: 2.5rem;
+}
+
+.linha-footer p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px 0;
+}
+
+.linha-footer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linha-footer form input[type="email"] {
+  width: 300px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: white;
+  padding: 10px;
+  outline: 0;
+}
+
+.linha-footer form input[type="submit"] {
+  width: 80px;
+  height: 40px;
+  background-color: var(--azul-claro);
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.linha-footer form input[type="submit"]:hover {
+  background-color: white;
+  color: var(--azul-claro);
+}
+
+/* ---------- SEGUNDA PARTE ---------- */
+
+footer .linha-footer2 {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+}
+
+.linha-footer2 h3 {
+  color: var(--azul-claro);
+  margin-bottom: 20px;
+}
+
+.linha-footer2 a {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* ---------- TERCEIRA PARTE ---------- */
+
+footer .linha-footer3 {
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* ==================================================
+   TELA PARA CELULAR
+================================================== */
+
+@media (max-width: 768px) {
+
+  /* ---------- MENU ---------- */
+
+  .logo-nome {
+    color: snow;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 90%;
+    background: var(--azul-escuro);
+    padding: 1rem;
+    gap: 15px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .menu-toggle:checked ~ .menu-list {
+    display: flex;
+  }
+
+  .menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* ---------- CONTEÚDO ---------- */
+
+  .conteudo {
+    padding: 110px 20px 32px;
+  }
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    padding: 25px 15px;
+  }
+
+  .linha-footer h2 {
+    font-size: 1.7rem;
+  }
+
+  .linha-footer p {
+    font-size: 1rem;
+  }
+
+  .linha-footer form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .linha-footer form input[type="email"] {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  footer .linha-footer2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+}

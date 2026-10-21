@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pousada Snow Valley: refúgio nas montanhas." />
+  <title>Pousada Snow Valley</title>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/inicio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header>
+    <!-- menu de navegação e sanduíche -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/galo_snow-Valley.png" alt="" />
+        <span class="logo-nome">Snow Valley</span>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="menu-list">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contatos.html">Contato</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="fund">
+    <h1>Snow Valley <br /> Refúgio nas montanhas</h1>
+  </section>
+
+  <!-- título -->
+  <section class="section-titulo">
+    <h2>Antucalhue Mountain Resort</h2>
+  </section>
+
+  <!-- carrossel de imagens -->
+  <section class="sectionrol">
+    <!-- imagens pequenas da esquerda -->
+    <div class="imagens-laterais">
+      <img src="images/img-restaurante_1.jpg" alt="Restaurante da pousada" />
+      <p>Restaurantes</p>
+      <img src="images/img-viajante.jpg" alt="Viajante" />
+      <p>Viajante</p>
+    </div>
+
+    <div class="carousel">
+      <input type="radio" name="slide" id="slide1" checked />
+      <input type="radio" name="slide" id="slide2" />
+      <input type="radio" name="slide" id="slide3" />
+      <input type="radio" name="slide" id="slide4" />
+      <input type="radio" name="slide" id="slide5" />
+      <input type="radio" name="slide" id="slide6" />
+      <input type="radio" name="slide" id="slide7" />
+
+      <div class="slides">
+        <img src="images/antucalhue_1.jpg" alt="Galeria da pousada, foto 1 de 7" />
+        <img src="images/antucalhue_11.jpg" alt="Galeria da pousada, foto 2 de 7" />
+        <img src="images/antucalhue_12.jpg" alt="Galeria da pousada, foto 3 de 7" />
+        <img src="images/antucalhue_7.jpg" alt="Galeria da pousada, foto 4 de 7" />
+        <img src="images/antucalhue_15.jpg" alt="Galeria da pousada, foto 5 de 7" />
+        <img src="images/antucalhue_6.jpg" alt="Galeria da pousada, foto 6 de 7" />
+        <img src="images/antucalhue_8.jpg" alt="Galeria da pousada, foto 7 de 7" />
+      </div>
+
+      <div class="botoes">
+        <label for="slide1" aria-label="Ir para a foto 1"></label>
+        <label for="slide2" aria-label="Ir para a foto 2"></label>
+        <label for="slide3" aria-label="Ir para a foto 3"></label>
+        <label for="slide4" aria-label="Ir para a foto 4"></label>
+        <label for="slide5" aria-label="Ir para a foto 5"></label>
+        <label for="slide6" aria-label="Ir para a foto 6"></label>
+        <label for="slide7" aria-label="Ir para a foto 7"></label>
+      </div>
+    </div>
+
+    <!-- imagens pequenas da direita -->
+    <div class="imagens-laterais">
+      <img src="images/antucalhue_3.jpg" alt="Hotel e serviços" />
+      <p>Hotel e Serviços</p>
+      <img src="images/img-quartos.jpg" alt="Quarto e suíte" />
+      <p>Quarto/Suíte</p>
+    </div>
+  </section>
+
+  <!-- rodapé -->
+  <footer>
+    <section class="linha-footer">
+      <h2>Quer receber notícias sobre nossa pousada?</h2>
+      <p>Inscreva-se aqui para receber mais informações:</p>
+      <form>
+        <input type="email" name="email" aria-label="Seu e-mail" required />
+        <input type="submit" value="Cadastrar" />
+      </form>
+    </section>
+
+    <section class="linha-footer2">
+      <div class="box-line-footer">
+        <h3>Links Úteis</h3>
+        <div class="links-footer">
+          <a href="contatos.html">Contatos</a>
+          <a href="sobre.html">Sobre nós</a>
+        </div>
+      </div>
+
+      <div class="box-line-footer">
+        <h3>Serviços</h3>
+        <div class="links-footer">
+          <a href="servicos.html">Nossos serviços</a>
+          <a href="reservas.html">Reservas</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="linha-footer3">
+      <p>&copy; 2026 Snow Valley. Todos os direitos reservados.</p>
+    </section>
+  </footer>
+</body>
+
+</html>
