@@ -1,0 +1,19 @@
+<script>
+    //laço de repetição para ler o vetor A
+    let vetorA=[];
+     for(let i=0; i<10;i++){
+        vetorA[i] = parseInt((prompt("Entre com o "+(i+1)+"o. valor de A:")));
+      }
+        
+    //laço de repetição para ler o vetor B
+    let soma =0;
+    let media
+    for(let i=0; i<10;i++){
+        soma += vetorA[i];
+      }
+    media = soma / 10;
+
+    // 4. Exibição dos resultados no console
+    document.write("Vetor A: ", vetorA+"<br><br>");
+    document.write("Média: ", media);
+</script>
