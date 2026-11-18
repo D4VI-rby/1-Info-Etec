@@ -1,0 +1,22 @@
+<script>
+
+    let numeros = [];
+    let aux;
+
+    for (let i = 0; i < 10; i++) {
+        numeros[i] = Number(prompt("Digite um número:"));
+    }
+
+    for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < 9; j++) {
+            if (numeros[j] > numeros[j + 1]) {
+                aux = numeros[j];
+                numeros[j] = numeros[j + 1];
+                numeros[j + 1] = aux;
+            }
+        }
+    }
+
+    document.write("Números em ordem crescente: " + numeros);
+
+</script>

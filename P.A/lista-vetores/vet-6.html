@@ -1,0 +1,25 @@
+<script>
+
+    let numeros = [];
+    let pesquisa;
+    let encontrado = false;
+    
+    for (let i = 0; i < 10; i++) {
+        numeros[i] = Number(prompt("Digite um número:"));
+    }
+    
+    pesquisa = Number(prompt("Qual número deseja pesquisar?"));
+    
+    for (let i = 0; i < 10; i++) {
+        if (numeros[i] == pesquisa) {
+            encontrado = true;
+        }
+    }
+    
+    if (encontrado == true) {
+        alert("Número " + pesquisa + " encontrado!");
+    } else {
+        alert("Número " + pesquisa + " não encontrado!");
+    }
+
+</script>

@@ -1,0 +1,17 @@
+<script>
+
+    let numeros = [];
+
+    for (let i = 0; i < 10; i++) {
+        numeros[i] = Number(prompt("Digite um número:"));
+    }
+
+    let resultado = "";
+
+    for (let i = 9; i >= 0; i--) {
+        resultado = resultado + numeros[i] + " ";
+    }
+
+    alert("Números na ordem inversa: " + resultado);
+
+</script>
