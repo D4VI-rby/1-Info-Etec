@@ -1,0 +1,81 @@
+
+/* Informações adicionais da pousada */
+.informacoes {
+  background: #f4f8fc;
+  padding: 55px 8%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+.bloco-info, .cartao-info {
+  background: #fff;
+  border: 1px solid #d7e8f6;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0, 8, 80, 0.06);
+}
+.bloco-info h2, .cartao-info h2 {
+  color: var(--azul-escuro);
+  margin-bottom: 12px;
+}
+.bloco-info p, .cartao-info p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.bloco-info a, .cartao-info a {
+  color: #064b83;
+  font-weight: 700;
+}
+.nota {
+  color: var(--azul-escuro);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 8px 0 !important;
+}
+.nota span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.lista-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+.lista-info span {
+  background: #eaf4fc;
+  border: 1px solid #c9e2f5;
+  border-radius: 18px;
+  padding: 8px 13px;
+}
+.pagina-info {
+  max-width: 900px;
+}
+.pagina-info h1 {
+  margin-bottom: 16px;
+}
+.pagina-info > p {
+  line-height: 1.7;
+}
+.imagem-pagina {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+.link-destaque {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .informacoes {
+    grid-template-columns: 1fr;
+    padding: 35px 18px;
+  }
+  .bloco-info, .cartao-info {
+    padding: 18px;
+  }
+}
